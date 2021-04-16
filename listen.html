@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- build:css css/main.css -->
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+     <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="node_modules/wow.js/css/libs/animate.css">
+    <!-- endbuild -->
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Orbitron&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" /> 
+    <title>Jamal Rizki Guitar</title>
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <div class="container wow pulse">
+            <a class="navbar-brand" href="index.html"><img src="img/128584649_297724264882924_9084186833920221746_n.jpg" height="30" width="30" /></a>
+            <div class="text-center wow slideInLeft data-wow-duration=2s">
+                <h1>Jamal Rizki</h1>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#jamalNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end  wow bounceInUp" id="jamalNavbar">
+                <ul class="navbar-nav topBotomBordersOut">
+                    <li class="nav-item"><a class="nav-link" href="index.html"> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html"> About</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#"> Listen</a></li>
+                    <li class="nav-item"><a class="nav-link" href="watch.html"> Watch</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html"> Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Page cover-->
+    <div id="app-cover"> 
+        <div id="bg-artwork"></div>
+        <div class="row">
+            <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-center">   
+                <div class="description">
+                    <p>
+                        <br/>
+                        <br/>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <!--Player-->
+        <div id="player" style="margin-top: 5em;"> 
+            <div id="player-track" class="wow bounceInDown center">
+                <div id="album-name"></div>
+                <div id="track-name"></div>
+                <div id="track-time">
+                    <div id="current-time"></div>
+                    <div id="track-length"></div>
+                </div>
+                <div id="s-area">
+                    <div id="ins-time"></div>
+                    <div id="s-hover"></div>
+                    <div id="seek-bar"></div>
+                </div>
+            </div>
+
+            <!--AlbumArt and backgound blur-->
+            <div id="player-content" class="wow bounceInUp">
+                <div id="album-art" class="wow flip">
+                    <img src="img/2.jpg" class="active" id="_1">
+                    <img src="img/1.jpg" id="_2">
+                    <img src="img/3.jpg" id="_3">
+                    <img src="img/4.jpg" id="_4">
+                    <img src="img/5.jpg" id="_5">
+                    <div id="buffer-box">Buffering ...</div>
+                </div>
+
+                <!--controls-->
+                <div id="player-controls">
+                    <div class="control wow flip">
+                        <div class="button" id="play-previous">
+                            <i class="fa fa-backward"></i>
+                        </div>
+                    </div>
+                    <div class="control wow flip">
+                        <div class="button" id="play-pause-button">
+                            <i class="fa fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="control wow flip">
+                        <div class="button" id="play-next">
+                            <i class="fa fa-forward"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--to keep footer in place-->
+    <wrapper class="d-flex flex-column">
+        <main class="flex-fill " style="margin-bottom: 100px;"></main>
+        <!--Footer-->  
+        <footer class="site-footer" style="margin-top: 30em;">
+            <div class="container wow pulse">
+                <div class="row"> 
+                    <div class="col-6col-sm-2 offset-1 mx-auto ">
+                        <h5><u>Links</u></h5>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="#">Listen</a></li>
+                            <li><a href="watch.html">Watch</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 ml-auto text-center wow flip">
+                        <h5><u>Social</u></h5>
+                        <a class="btn btn-social-icon btn-instagram" href="https://www.instagram.com/jamalbrizki/?hl=en"><i class="fa fa-instagram"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="https://www.youtube.com/channel/UCM4yVvcftnEZmlJCPyrui_Q"><i class="fa fa-youtube"></i></a>
+                        <a class="btn btn-social-icon btn-soundcloud" href="https://soundcloud.com/jamalrizki"><i class="fa fa-soundcloud"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </wrapper>
+       <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/glyphicons/glyphicons.js"></script>
+    <script src="js/myfullscreen.js"></script>
+    <script src="node_modules/wow.js/dist/wow.min.js"></script>
+    <script> new WOW().init(); </script>
+    <!-- endbuild -->
+         
+</body>
+</html>
